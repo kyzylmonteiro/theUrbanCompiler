@@ -1,10 +1,11 @@
 import React from "react";
+import Prism from "prismjs";
 import Editor from "react-simple-code-editor";
 import { highlight, languages } from "prismjs/components/prism-core";
 import "prismjs/components/prism-clike";
 import "prismjs/components/prism-javascript";
 import "prismjs/components/prism-processing";
-import Button from "@material-ui/core/Button";
+import Fab from "@material-ui/core/Fab";
 import PlayArrowIcon from "@material-ui/icons/PlayArrow";
 import "./codeEditorStyles.css";
 
@@ -13,7 +14,6 @@ class CodingEditor extends React.Component {
     super(props);
     this.myRef = React.createRef();
     this.state = { code: this.props.code };
-    alert("updated", this.state.code, this.state.f);
     this.demoMethod = this.demoMethod.bind(this);
   }
   demoMethod() {
@@ -26,6 +26,9 @@ class CodingEditor extends React.Component {
         () => (this.refs.myRef = this.state.code)
       );
     }
+  }
+  componentDidMount() {
+    Prism.highlightAll();
   }
   // shouldComponentUpdate(nextProps, nextState) {
   //   if (nextProps.code === this.state.code && nextProps.f === this.state.f) {
@@ -46,11 +49,28 @@ class CodingEditor extends React.Component {
     // }
 
     return (
-      <div>
-        {this.props.fs.length >= 2 ? (
+      <div className="codeEditor">
+        {/* {alert(this.state.code + "snap")} */}
+        {this.props.fs.length >= 1 ? (
           <div>
             {this.props.fs.map(f => {
-              return <div className="meaningBlock">{f}</div>;
+              return (
+                <div highlight={code => highlight(code, languages.processing)}>
+                  <Editor
+                    className="editor"
+                    value={f}
+                    highlight={code => highlight(code, languages.processing)}
+                    padding={10}
+                    style={{
+                      fontFamily: '"Fira code", "Fira Mono", monospace',
+                      fontSize: 12,
+                      //   height: "100%",
+                      //   minHeight: "80%",
+                      maxHeight: "100%"
+                    }}
+                  />
+                </div>
+              );
             })}
           </div>
         ) : (
@@ -72,14 +92,14 @@ class CodingEditor extends React.Component {
           }}
         />
         <div className="playButton">
-          <Button
-            variant="contained"
+          <Fab
             color="primary"
-            startIcon={<PlayArrowIcon />}
+            size="small"
+            aria-label="add"
             onClick={this.demoMethod}
           >
-            Run
-          </Button>
+            <PlayArrowIcon />
+          </Fab>
         </div>
       </div>
     );

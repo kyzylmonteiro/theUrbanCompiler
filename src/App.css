@@ -11,7 +11,7 @@
   height: 100vh;
   /* border: 1px solid black; */
   /* box-shadow: inset 10px 0px 10px 1px lightgrey; */
-  /* box-shadow: inset 1px 0px 0px black; */
+  box-shadow: inset 1px 0px 0px rgb(106, 99, 153);
   /* margin-left: 10px; */
 }
 .outputArea {

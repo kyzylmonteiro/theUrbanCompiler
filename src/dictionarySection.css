@@ -2,10 +2,7 @@
   height: 100%;
 }
 .heading {
-  width: 95%;
-  height: 7%;
   text-align: center;
-  background-color: whitesmoke;
   margin: auto;
 }
 .word {
@@ -21,13 +18,24 @@
   border: 1px solid lightgray;
   padding: 10px;
   padding-top: 20px;
+  padding-bottom: 50px;
 }
 .meaningsDisplay {
-  max-height: 90%;
+  max-height: 75%;
   width: 90%;
   margin: auto;
-  border: 1px solid pink;
+  border: 1px solid lightgray;
   border-radius: 10px;
   padding: 0 10px 0 10px;
   overflow-y: scroll;
+}
+.formControl {
+  margin: 10px;
+  min-width: 120;
+}
+.selectEmpty {
+  margin-top: 10px;
+}
+.functionSection {
+  /* margin-top: 5px; */
 }

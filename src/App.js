@@ -38,14 +38,18 @@ class App extends React.Component {
             <Output code={this.state.outputCode} fs={this.state.fs} />
           </div>
           <div className="codingArea">
-            <div>Coding Editor</div>
-            {alert(
+            <div
+              style={{ fontSize: "12px", color: "gray", textAlign: "center" }}
+            >
+              Type P5js code below or choose a slang and then a code snippet
+            </div>
+            {/* {alert(
               this.state.fs +
                 "---" +
                 this.state.code +
                 "---" +
                 this.state.functions
-            )}
+            )} */}
             <CodingEditor
               fs={this.state.fs}
               code={this.state.outputCode}

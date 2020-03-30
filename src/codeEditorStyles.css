@@ -1,9 +1,15 @@
+.codeEditor {
+  max-height: 90%;
+  overflow-y: scroll;
+}
 .editor {
   height: 60%;
   margin-left: 10px;
   margin-bottom: 10px;
 }
 .playButton {
+  position: sticky;
+  bottom: 10%;
   margin-right: 2%;
   float: right;
 }

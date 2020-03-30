@@ -9,13 +9,14 @@ class Output extends React.Component {
   y = 50;
 
   setup = (p5, canvasParentRef) => {
-    p5.createCanvas(200, 200).parent(canvasParentRef); // use parent to render canvas in this ref (without that p5 render this canvas outside your component)
+    p5.createCanvas(925, 350).parent(canvasParentRef); // use parent to render canvas in this ref (without that p5 render this canvas outside your component)
   };
   draw = p5 => {
     p5.clear();
-    this.props.fs.length >= 2
-      ? eval(this.props.fs.join("\n"))
-      : eval(this.props.code);
+    if (this.props.fs.length >= 1) {
+      eval(this.props.fs.join("\n"));
+    }
+    eval(this.props.code);
   };
 
   render() {
