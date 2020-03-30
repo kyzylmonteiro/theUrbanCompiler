@@ -15,7 +15,7 @@ class App extends React.Component {
   getData(val) {
     // do not forget to bind getData in constructor
     this.setState({ functions: val });
-    alert(val);
+    // alert(val);
   }
   getOutputCode(val) {
     // do not forget to bind getData in constructor
@@ -25,7 +25,7 @@ class App extends React.Component {
     // do not forget to bind getData in constructor
     // this.setState({ f: val });
 
-    alert(val + "heheheheh");
+    // alert(val + "heheheheh");
     this.setState(prevState => ({ fs: [...prevState.fs, val] }));
     // alert(this.state.f);
   }
