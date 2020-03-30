@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "619065881821e415d6b9acafe589934c",
+    "revision": "a74df792e5b404757568496a3b7a3209",
     "url": "/theUrbanCompiler/index.html"
   },
   {
-    "revision": "4a222a2ae406fe1ac611",
+    "revision": "acee856a2bbc24ad66e1",
     "url": "/theUrbanCompiler/static/css/main.3f63c648.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/theUrbanCompiler/static/js/2.5ad0e896.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4a222a2ae406fe1ac611",
-    "url": "/theUrbanCompiler/static/js/main.a9a8ab1b.chunk.js"
+    "revision": "acee856a2bbc24ad66e1",
+    "url": "/theUrbanCompiler/static/js/main.a310a5e3.chunk.js"
   },
   {
     "revision": "700b74c7877cdc7d097e",
