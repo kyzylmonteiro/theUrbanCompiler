@@ -27,7 +27,7 @@ class FunctionSection extends React.Component {
             {this.props.functions.map(f => {
               return (
                 <div className="meaningBlock">
-                  {f}
+                  {f.split("//")[1].toUpperCase()}
                   <Button
                     disableElevation
                     variant="contained"
