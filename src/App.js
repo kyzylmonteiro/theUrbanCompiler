@@ -41,7 +41,7 @@ class App extends React.Component {
             <div
               style={{ fontSize: "12px", color: "gray", textAlign: "center" }}
             >
-              Type P5js code below or choose a slang and then a code snippet
+              Choose a slang and then a code snippet OR type P5js code below
             </div>
             {/* {alert(
               this.state.fs +
