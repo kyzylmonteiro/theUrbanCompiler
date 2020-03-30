@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/theUrbanCompiler/precache-manifest.71cbad8708e452c4fc5fe5eadcbcf0a7.js"
+  "/theUrbanCompiler/precache-manifest.4337f16750dd6cfabf7a568c312af27d.js"
 );
 
 self.addEventListener('message', (event) => {
