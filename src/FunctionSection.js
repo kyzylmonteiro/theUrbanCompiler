@@ -1,34 +1,37 @@
 import React from "react";
-import meanings from "./meanings";
 import "./functionSection.css";
 
-const meaningsList = meanings;
-
 class FunctionSection extends React.Component {
+  constructor(props) {
+    super(props);
+    // this.state = { functionList:  };
+    this.demoMethod = this.demoMethod.bind(this);
+  }
+  demoMethod(val) {
+    this.props.sendFunc(val);
+  }
   render() {
     return (
       <div className="dictionarySection">
         <div className="heading">Functions</div>
-        <div className="meaningsDisplay">
-          <div className="word">for the selected definition</div>
-          {meaningsList.map(defObject => {
-            return (
-              <div>
-                {defObject.word.toUpperCase() === "hella".toUpperCase() ? (
-                  <div className="meaningBlock" id={defObject.defid}>
-                    {defObject.definition
-                      .split("[")
-                      .join(" ")
-                      .split("]")
-                      .join(" ")}
-                  </div>
-                ) : (
-                  <></>
-                )}
-              </div>
-            );
-          })}
-        </div>
+        {/* {alert(this.props.functions.length)} */}
+        {this.props.functions.length >= 1 ? (
+          <div className="meaningsDisplay">
+            <div className="word">for the selected definition</div>
+            {this.props.functions.map(f => {
+              return (
+                <div
+                  className="meaningBlock"
+                  onClick={() => this.demoMethod(f)}
+                >
+                  {f}
+                </div>
+              );
+            })}
+          </div>
+        ) : (
+          <></>
+        )}
       </div>
     );
   }

@@ -1,13 +1,13 @@
 .leftSection {
   float: left;
-  width: 70vw;
+  width: 69vw;
   height: 100vh;
   /* border: 1px solid red; */
   /* box-shadow: inset 0px 0px 0px 1px #f00; */
 }
 .rightSection {
   float: left;
-  width: 30vw;
+  width: 29vw;
   height: 100vh;
   /* border: 1px solid black; */
   /* box-shadow: inset 10px 0px 10px 1px lightgrey; */

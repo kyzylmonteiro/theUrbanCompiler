@@ -10,7 +10,11 @@
     "current_vote": "",
     "written_on": "2004-05-27T00:00:00.000Z",
     "example": "The [Fillmore] is hella better than [the Mission].\r\n\r\n[Thank God] LA is hella far away.",
-    "thumbs_down": 3051
+    "thumbs_down": 3051,
+    "functions": [
+      "p5.rect(100,100,100,100);//hella big rectangle",
+      "p5.rect(50,100,100,100);//hella big rectangle"
+    ]
   },
   {
     "definition": "A [multi-purpose] word invented by people in north california, indigenous to the [Bay Area]. \r\n\r\nAdjective: To describe a lot of something or something good.\r\n\r\nNoun: A lot of\r\n\r\nAdverb: Suplemental, inferrs a great quantity or that you're doing something and [DOING IT RIGHT]!\r\n\r\nInterjection: An affirmation of what someone just said",
@@ -23,7 +27,11 @@
     "current_vote": "",
     "written_on": "2004-01-05T00:00:00.000Z",
     "example": "Adjective: This party is [hella chill].\r\n\r\nNoun: I have hella.\r\n\r\nAdverb: The Bay areais fuckin hella better than [socal]\r\n\r\nInterjection: Nicole: Dude that shit was [off tha hook]\r\nJaime: hella!",
-    "thumbs_down": 1520
+    "thumbs_down": 1520,
+    "functions": [
+      "p5.rect(30,100,100,100);//hella big rectangle",
+      "p5.rect(50,100,100,100);//hella big rectangle"
+    ]
   },
   {
     "definition": "When [something] is [turned up] or [popping] ...",
