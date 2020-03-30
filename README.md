@@ -4,9 +4,13 @@ Slangs are a huge part of communication today, but computers fail to understand 
 
 Demo : [The Urban Compiler](https://kyzylmonteiro.github.io/theUrbanCompiler/) 
 
-# Inspiration
+# Inspiration 
 
-[![IMAGE ALT TEXT HERE](https://www.youtube.com/watch?v=CFT6w9NKfCs/0.jpg)](https://www.youtube.com/watch?v=CFT6w9NKfCs)
+## Video
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/CFT6w9NKfCs/0.jpg)](https://www.youtube.com/watch?v=CFT6w9NKfCs) 
+
+## Project
+[Code Slang](https://github.com/xujenna/codeslang)
 
 # User Flow
 
