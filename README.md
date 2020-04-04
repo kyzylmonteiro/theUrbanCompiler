@@ -2,15 +2,7 @@
 
 Slangs are a huge part of communication today, but computers fail to understand slang. The Code Slang library is a step towards bridging this gap. Slang since forever has been designed by the people, as it is evident in the urban dictionary. This platform enables people to contribute to the library, continuing with Sharon De La Cruz's idea of crowdsourcing the library. Users will be able to contribute by adding a function or appreciating an existing function definition in the library. This approach is a step towards the computer understanding slangs and towards creating a library that is up to date, which is necessary as slangs are always evolving, and it would also avoid the pitfalls of slangs having different meanings in different contexts.
 
-Demo : [The Urban Compiler](https://kyzylmonteiro.github.io/theUrbanCompiler/) 
-
-# Inspiration 
-
-## Video
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/CFT6w9NKfCs/0.jpg)](https://www.youtube.com/watch?v=CFT6w9NKfCs) 
-
-## Project
-[Code Slang](https://github.com/xujenna/codeslang)
+Demo : [The Urban Compiler](https://kyzylmonteiro.github.io/theUrbanCompiler/)
 
 # User Flow
 
@@ -21,6 +13,16 @@ Demo : [The Urban Compiler](https://kyzylmonteiro.github.io/theUrbanCompiler/)
 ![Wireframe](https://github.com/kyzylmonteiro/theUrbanCompiler/blob/master/public/wireframe.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+# Inspiration
+
+## Video
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/CFT6w9NKfCs/0.jpg)](https://www.youtube.com/watch?v=CFT6w9NKfCs)
+
+## Project
+
+[Code Slang](https://github.com/xujenna/codeslang)
 
 ## Available Scripts
 

@@ -4,6 +4,7 @@ import CodingEditor from "./CodingEditor";
 import DictionarySection from "./DictionarySection";
 import FunctionSection from "./FunctionSection";
 import Output from "./Output";
+import CustomizedDialogs from "./CustomizedDialogs";
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -32,7 +33,10 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header"></header>
+        <header className="App-header">
+          {" "}
+          <CustomizedDialogs />{" "}
+        </header>
         <div className="leftSection">
           <div className="outputArea">
             <Output code={this.state.outputCode} fs={this.state.fs} />
@@ -41,15 +45,10 @@ class App extends React.Component {
             <div
               style={{ fontSize: "12px", color: "gray", textAlign: "center" }}
             >
+              Click on the Info Button! <br />
               Choose a slang and then a code snippet OR type P5js code below
             </div>
-            {/* {alert(
-              this.state.fs +
-                "---" +
-                this.state.code +
-                "---" +
-                this.state.functions
-            )} */}
+
             <CodingEditor
               fs={this.state.fs}
               code={this.state.outputCode}

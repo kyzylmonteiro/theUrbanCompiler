@@ -44,7 +44,9 @@ class DictionarySection extends React.Component {
               </MenuItem>
               <MenuItem value={"Hella"}>Hella</MenuItem>
               <MenuItem value={"Lit"}>Lit</MenuItem>
-              <MenuItem value={"Dope"}>Dope</MenuItem>
+              <MenuItem disabled value={""}>
+                More Coming up
+              </MenuItem>
             </Select>
             <FormHelperText>
               All definitions from urban Dictionary
@@ -55,7 +57,7 @@ class DictionarySection extends React.Component {
         <div className="meaningsDisplay">
           {meaningsList.map(defObject => {
             return (
-              <div>
+              <div key={defObject.defid}>
                 {defObject.word.toUpperCase() ===
                 this.state.word.toUpperCase() ? (
                   <div className="meaningBlock" id={defObject.defid}>
